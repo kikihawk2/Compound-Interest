@@ -1,0 +1,23 @@
+/*This program takes in input from the user and calculates the compound interest rate
+Kiana Hawkins
+Intro. To Mathematical Programming
+08/30/2021
+*/
+import java.util.Scanner;//creates a scanner
+public class MyClass {//makes a class
+    public static void main(String args[]) {//main method
+     Scanner input=new Scanner(System.in);//creates a scanner
+
+      System.out.println("Enter the  principal");//prints out this statement
+      double p=input.nextDouble();//takes in input from the keyboard for principal
+      System.out.println("Enter the rate");//prints out this statement
+      double r=input.nextDouble();//takes in input from the keyboard for rate
+      System.out.println("Enter the time");//prints out this statement
+      double t=input.nextDouble();//takes in input from the keyboard for time
+      System.out.println("Enter compounding frequency");//prints out this statement
+      double n=input.nextDouble();//takes in input from the keyboard for compounding frequency
+      double interest=p*(Math.pow((1+r/100),(t*n)));//creates an equation
+      
+      System.out.println("The Compounding Interest is:" +interest);//prints out this statement and prints out the amount for the interest
+    }
+}
